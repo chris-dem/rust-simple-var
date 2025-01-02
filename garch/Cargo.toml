@@ -1,0 +1,11 @@
+[package]
+name = "garch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+blas-src = { version = "0.10.0", features = ["accelerate"] }
+ndarray = { version = "0.15.6", features = ["blas"] }
+ndarray-linalg = { version = "0.16.0" }
+rand = { version = "0.8.5", features = ["small_rng"] }
+tracing = "0.1.41"
